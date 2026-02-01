@@ -1,0 +1,36 @@
+# .NET
+**/bin/
+**/obj/
+*.dll
+*.exe
+*.pdb
+*.generated.cs
+*.AssemblyInfo.cs
+
+# Build artifacts
+artifacts/
+dist/
+publish/
+
+# IDE
+.vs/
+.vscode/
+*.sln.iml
+*.user
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+*.coverage
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../tests/Nekonomicon.Cli.Tests/Nekonomicon.Cli.Tests.csproj" />
+  <Project Path="../tests/Nekonomicon.Core.Tests/Nekonomicon.Core.Tests.csproj" />
+  <Project Path="Nekonomicon.Cli/Nekonomicon.Cli.csproj" />
+  <Project Path="Nekonomicon.Core/Nekonomicon.Core.csproj" />
+</Solution>

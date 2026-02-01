@@ -1,0 +1,39 @@
+~~~
+    Demo spell showcasing variables and containers
+    This spell manages a simple user database
+~~~
+
+ask 'Enter your name:' into @!username.
+ask 'Enter your email:' into @!email.
+
+decide @!username equals '' into @!username_is_empty.
+decide @!email equals '' or @!email is missing '@' into @!email_is_invalid.
+
+if @!email_is_invalid or @!username_is_empty
+  success 'Email cannot be empty.'.
+end
+
+say 'Creating user profile...'.
+
+container
+  :name @!username
+  :email @!email
+  :age @!age
+  :account_type 'premium'
+  :active true
+  :preferences 'newsletter' 'notifications'
+  :emergency_contact
+    :name 'John Doe'
+    :email 'john@example.com'
+  :]
+into ::!user_profile. ~ immutable container
+
+say 'User Profile Created:'.
+say 'Name:' ::!user_profile:name.
+say 'Email: ' ::!user_profile:email.
+say 'Age: ' ::!user_profile:age.
+say 'Account Type: ' ::!user_profile:account_type.
+say 'Preferences:' ::!user_profile:preferences#0 ', ' ::!user_profile:preferences#1.
+say 'Emergency Contact: ' ::!user_profile:emergency_contact:name 'with the email' ::!user_profile:emergency_contact:email.
+
+success 'User profile successfully created.'.

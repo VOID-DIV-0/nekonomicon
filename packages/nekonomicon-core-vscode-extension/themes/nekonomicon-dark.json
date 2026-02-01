@@ -1,0 +1,110 @@
+{
+  "name": "Nekonomicon Dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#282a36",
+    "editor.foreground": "#f8f8f2",
+    "editor.selectionBackground": "#44475a",
+    "editor.lineHighlightBackground": "#44475a"
+  },
+  "tokenColors": [
+    {
+      "scope": "variable.scalar.nekonomicon",
+      "settings": {
+        "foreground": "#D0557EFF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "variable.container.nekonomicon",
+      "settings": {
+        "foreground": "#559DD0FF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "constant.boolean.nekonomicon",
+      "settings": {
+        "foreground": "#bd93f9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "constant.number.nekonomicon",
+      "settings": {
+        "foreground": "#bd93f9",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "comment.line.nekonomicon",
+      "settings": {
+        "foreground": "#6272a4",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "comment.block.nekonomicon",
+      "settings": {
+        "foreground": "#6272a4",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword.control.nekonomicon",
+      "settings": {
+        "foreground": "#ff5555",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "string.quoted.nekonomicon",
+      "settings": {
+        "foreground": "#7AB0A9FF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "keyword.control.intrinsic.nekonomicon",
+      "settings": {
+        "foreground": "#A3FFE2FF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "keyword.control.intrinsic.fail.nekonomicon",
+      "settings": {
+        "foreground": "#FF0088FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.control.intrinsic.success.nekonomicon",
+      "settings": {
+        "foreground": "#52DCB9FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "keyword.operator.comparison.nekonomicon",
+      "settings": {
+        "foreground": "#FFBF6CFF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "keyword.operator.logical.nekonomicon",
+      "settings": {
+        "foreground": "#F5DAB6FF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "keyword.operator.math.nekonomicon",
+      "settings": {
+        "foreground": "#F5DAB6FF",
+        "fontStyle": ""
+      }
+    }
+  ]
+}

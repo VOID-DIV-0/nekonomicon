@@ -1,0 +1,63 @@
+{
+  "name": "nekonomicon",
+  "scopeName": "source.nekonomicon",
+  "fileTypes": ["spell"],
+  "patterns": [
+    {
+      "name": "comment.block.nekonomicon",
+      "begin": "~~~",
+      "end": "~~~"
+    },
+    {
+      "name": "comment.line.nekonomicon",
+      "match": "~.*$"
+    },
+    {
+      "name": "variable.scalar.nekonomicon",
+      "match": "@[!?]?[a-zA-Z_][a-zA-Z0-9_]*"
+    },
+    {
+      "name": "variable.container.nekonomicon",
+      "match": ":?:[!?]?[a-zA-Z_][a-zA-Z0-9_]*(?:(:[!?]?[a-zA-Z_][a-zA-Z0-9_]*|#[0-9]+))*"
+    },
+    {
+      "name": "constant.boolean.nekonomicon",
+      "match": "\\b(true|false)\\b"
+    },
+    {
+      "name": "constant.number.nekonomicon",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "name": "string.quoted.nekonomicon",
+      "begin": "'",
+      "end": "'"
+    },
+    {
+      "name": "keyword.control.intrinsic.nekonomicon",
+      "match": "\\b(say|ask|into|if|else|while|decide|end|with|all|on|import|container|array)\\b"
+    },
+    {
+      "name": "keyword.control.intrinsic.fail.nekonomicon",
+      "match": "\\b(fail)\\b"
+    },
+    {
+      "name": "keyword.control.intrinsic.success.nekonomicon",
+      "match": "\\b(success)\\b"
+    },
+    {
+      "name": "keyword.operator.math.nekonomicon",
+      "match": "\\+|\\-|\\*|/|%"
+    },
+    {
+      "name": "keyword.operator.comparison.nekonomicon",
+      "match": ">=|<=|==|!=|>|<"
+    },
+    {
+      "name": "keyword.operator.logical.nekonomicon",
+      "match": "\\b(equals|and|or|not|is|all|any|none|exclusive|missing|null)\\b"
+    }
+  ],
+
+  "uuid": "b1e7f1e2-7e8a-4b2a-9c0e-1a2b3c4d5e6f"
+}
