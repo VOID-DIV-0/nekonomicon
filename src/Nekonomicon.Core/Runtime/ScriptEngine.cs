@@ -101,8 +101,8 @@ public class ScriptEngine
                 return Result<Unit>.Failure(valueExpr.ErrorMessage);
             }
 
-            // Call SetIntrinsic with variable name, modifier, and value
-            var args = new List<object?> { varRef.Name, varRef.Modifier, valueExpr.Value };
+            // Call SetIntrinsic with variable name and value
+            var args = new List<object?> { varRef.Name, valueExpr.Value };
             return intrinsic.Execute(args, _context);
         }
 

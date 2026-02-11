@@ -1,23 +1,34 @@
-using Nekonomicon.Core.Runtime;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+using System.CommandLine;
+
+using Nekonomicon.Core.Models;
+using Nekonomicon.Cli.Panics;
+using Nekonomicon.Cli.Commands;
 
 namespace Nekonomicon.Cli;
 
 class Program
 {
-  static int Main(string[] args)
-  {
-    var host = Host.CreateDefaultBuilder(args)
-        .ConfigureServices((context, services) =>
-        {
-            services.AddTransient<ICommandHandler, Conjure>();
-            services.AddTransient<ICommandHandler, Help>();
-            // Register other adapters/services as needed
-        })
-        .Build();
+    static int Main(string[] args)
+    {
+        var host = Host.CreateDefaultBuilder(args)
+            .ConfigureServices((context, services) =>
+            {
+            })
+            .Build();
 
-    var adapter = host.Services.GetRequiredService<IArgumentAdapter>();
-    var engine = host.Services.GetRequiredService<IScriptEngine>();
-  }
+
+        RootCommand rootCommand = new("Nekonomicon CLI - The neko interpreter")
+        {
+            new VersionCommand(),
+            new CastCommand()
+        };
+
+        // Disable the built-in --version option (use 'neko version' instead)
+        rootCommand.Options.RemoveAt(rootCommand.Options.Count - 1);
+
+        ParseResult parseResult = rootCommand.Parse(args);
+        return parseResult.Invoke();
+    }
 }
+
