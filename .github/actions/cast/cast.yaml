@@ -1,0 +1,13 @@
+name: Cast Nekonomicon Spell
+inputs:
+  spell:
+    required: true
+    description: The spell script to execute
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        nekonomicon cast << 'EOF'
+        ${{ inputs.spell }}
+        EOF

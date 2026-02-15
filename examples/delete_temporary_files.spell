@@ -10,7 +10,7 @@ decide @!username equals '' into @!username_is_empty.
 decide @!email equals '' or @!email is missing '@' into @!email_is_invalid.
 
 if @!email_is_invalid or @!username_is_empty
-  success 'Email cannot be empty.'.
+  fail 'Email cannot be empty.'.
 end
 
 say 'Creating user profile...'.
