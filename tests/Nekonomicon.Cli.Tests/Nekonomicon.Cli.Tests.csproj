@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Nekonomicon.Cli\Nekonomicon.Cli.csproj" />
+    <ProjectReference Include="..\..\source\Nekonomicon.Cli\Nekonomicon.Cli.csproj" />
   </ItemGroup>
 
 </Project>
