@@ -4,14 +4,4 @@
 
 Welcome to the Nekonomicon language documentation.
 
-## Navigation
-
-- [[documentation/01-getting-started]] — Getting started tutorials
-- [[documentation/02-how-to-guides]] — Practical task guides  
-- [[documentation/03-language-reference]] — Technical reference
-- [[documentation/04-concepts]] — Deep dive explanations
-
-## Quick Access
-
-- [[documentation/03-language-reference/data/variable|variable]]
-- [[documentation/03-language-reference/Error-Codes|Error Codes]]
+The documentation is accessible in `/language-reference` but requires installing obsidian.
